@@ -1,0 +1,23 @@
+# R / RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# rendered README artifacts
+README.html
+
+# pkgdown output (deployed via GitHub Actions to gh-pages)
+docs/
+
+# regenerable raw-data caches (re-fetched by data-raw/build_package.R)
+data-raw/cache/
+
+# leftover hex source (final logo lives at man/figures/logo.png)
+hex.jpg
+
+# macOS
+.DS_Store
+
+# Claude Code
+.claude/

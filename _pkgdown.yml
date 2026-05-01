@@ -1,0 +1,41 @@
+url: https://moderndive.github.io/exoplanets/
+
+home:
+  title: exoplanets
+  description: >
+    Tidied datasets of confirmed exoplanets and their host stars, sourced
+    from NASA's Exoplanet Archive — designed for teaching introductory
+    statistics in the spirit of moderndive.
+
+template:
+  bootstrap: 5
+  light-switch: true
+  bslib:
+    primary: "#1a3d7c"
+    bg: "#ffffff"
+    fg: "#1a1f33"
+    base_font: {google: "Inter"}
+    heading_font: {google: "Space Grotesk"}
+    code_font: {google: "JetBrains Mono"}
+
+navbar:
+  structure:
+    left:  [reference, articles, news]
+    right: [search, lightswitch, github]
+
+reference:
+  - title: Datasets
+    desc: >
+      Tidied tables retrieved from NASA's Exoplanet Archive via the
+      `REXoplanets` package.
+    contents:
+      - planets
+      - stars
+
+  - title: Package
+    contents:
+      - exoplanets-package
+
+news:
+  releases:
+    - text: "Releases"

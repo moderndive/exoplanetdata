@@ -1,0 +1,29 @@
+column_name,label,units,r_type,n_missing,example,description,archive_name
+planet_name,Planet Name,NA,character,0,11 Com b,Planet name most commonly used in the literature.,pl_name
+host_name,Host Name,NA,character,0,11 Com,Stellar name most commonly used in the literature.,hostname
+n_stars,Number of Stars,NA,numeric,0,2,Number of gravitationally bound stars in the planetary system.,sy_snum
+n_planets,Number of Planets,NA,numeric,0,1,Number of confirmed planets in the planetary system.,sy_pnum
+discovery_method,Discovery Method,NA,factor,0,Radial Velocity,"Method by which the planet was first identified (e.g. Transit, Radial Velocity).",discoverymethod
+discovery_year,Discovery Year,NA,integer,1,2007,Year the planet was discovered.,disc_year
+discovery_facility,Discovery Facility,NA,character,0,Xinglong Station,Name of the facility making the discovery observations.,disc_facility
+orbital_period_days,Orbital Period,days,numeric,340,323.21,Time the planet takes to complete one orbit around its host (system).,pl_orbper
+semi_major_axis_au,Orbit Semi-Major Axis,au,numeric,428,1.178,"Longest radius of the elliptic orbit; for microlensing/imaging detections, the projected sky-plane separation.",pl_orbsmax
+eccentricity,Eccentricity,NA,numeric,1051,0.238,Amount by which the orbit deviates from a perfect circle (0 = circular).,pl_orbeccen
+inclination_deg,Inclination,deg,numeric,1512,146.7,Angle of the orbit plane relative to the plane perpendicular to Earth's line of sight.,pl_orbincl
+radius_earth,Planet Radius,Earth radii,numeric,50,12.2,Planet radius measured in units of Earth's radius.,pl_rade
+radius_jupiter,Planet Radius,Jupiter radii,numeric,50,1.09,Planet radius measured in units of Jupiter's radius.,pl_radj
+mass_earth,Planet Mass or Mass*sin(i),Earth masses,numeric,31,4914.89848585,"Best mass estimate (Mass, M*sin(i)/sin(i), or M*sin(i)) in Earth masses.",pl_bmasse
+mass_jupiter,Planet Mass or Mass*sin(i),Jupiter masses,numeric,31,15.464,"Best mass estimate (Mass, M*sin(i)/sin(i), or M*sin(i)) in Jupiter masses.",pl_bmassj
+density_g_cm3,Planet Density,g/cm^3,numeric,140,14.9,Planet mass per unit volume.,pl_dens
+eq_temp_k,Equilibrium Temperature,K,numeric,1601,1700,Equilibrium temperature assuming a black-body planet heated by its host star.,pl_eqt
+insolation_earth,Insolation Flux,Earth flux,numeric,1878,2657.8322,Stellar flux at the planet relative to Earth's solar flux.,pl_insol
+star_spec_type,Spectral Type,NA,character,3964,G8 III,Morgan-Keenan spectral classification of the host star.,st_spectype
+star_temp_k,Stellar Effective Temperature,K,numeric,294,4874,Black-body temperature emitting the same total electromagnetic radiation as the star.,st_teff
+star_radius_solar,Stellar Radius,Solar radii,numeric,318,13.76,Stellar radius in units of the Sun's radius.,st_rad
+star_mass_solar,Stellar Mass,Solar masses,numeric,9,2.09,Stellar mass in units of the Sun's mass.,st_mass
+star_metallicity_dex,Stellar Metallicity,dex,numeric,641,-0.26,Metal content of the stellar photosphere relative to hydrogen.,st_met
+star_log_g,Stellar Surface Gravity,log10(cm/s^2),numeric,322,2.45,Gravitational acceleration at the stellar surface (log10).,st_logg
+star_age_gyr,Stellar Age,Gyr,numeric,1425,1.56,Age of the host star in billions of years.,st_age
+ra_deg,Right Ascension,deg,numeric,0,185.1787793,Right ascension of the planetary system in decimal degrees.,ra
+dec_deg,Declination,deg,numeric,0,17.7932516,Declination of the planetary system in decimal degrees.,dec
+distance_pc,Distance,pc,numeric,27,93.1846,Distance to the planetary system in parsecs.,sy_dist
