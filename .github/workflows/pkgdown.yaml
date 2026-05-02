@@ -13,7 +13,6 @@ permissions: read-all
 jobs:
   pkgdown:
     runs-on: ubuntu-latest
-    environment: github-pages
     permissions:
       contents: write
     env:
