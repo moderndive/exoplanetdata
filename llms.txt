@@ -4,9 +4,8 @@ Tidied datasets of confirmed exoplanets and their host stars, retrieved
 from NASA’s Exoplanet Archive via the
 [`REXoplanets`](https://github.com/JKolomanski/REXoplanets) package.
 Column names have been simplified for classroom use, with units baked
-into names where ambiguous. Intended as a companion dataset for
-introductory statistics teaching in the spirit of the
-[`moderndive`](https://moderndive.com) textbook.
+into names where ambiguous. Intended as a companion dataset of the
+[`moderndive`](https://moderndive.com/v2/) textbook.
 
 ## Installation
 
