@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>exoplanets • exoplanets</title>
+<title>exoplanetdata • exoplanetdata</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
 <link rel="icon" type="”image/svg+xml”" href="favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -18,12 +18,12 @@
 <link href="deps/Space_Grotesk-0.4.10/font.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="exoplanets">
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="exoplanetdata">
 <meta name="description" content="Tidied datasets of confirmed exoplanets and their host stars, sourced from NASA's Exoplanet Archive — designed for teaching introductory statistics in the spirit of moderndive.
 ">
 <meta property="og:description" content="Tidied datasets of confirmed exoplanets and their host stars, sourced from NASA's Exoplanet Archive — designed for teaching introductory statistics in the spirit of moderndive.
 ">
-<meta property="og:image" content="https://moderndive.github.io/exoplanets/logo.png">
+<meta property="og:image" content="https://moderndive.github.io/exoplanetdata/logo.png">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -31,7 +31,7 @@
 
     <nav class="navbar navbar-expand-lg fixed-top " aria-label="Site navigation"><div class="container">
 
-    <a class="navbar-brand me-2" href="index.html">exoplanets</a>
+    <a class="navbar-brand me-2" href="index.html">exoplanetdata</a>
 
     <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.0</small>
 
@@ -65,7 +65,7 @@
     <li><button class="dropdown-item" data-bs-theme-value="auto"><span class="fa fa-adjust"></span> Auto</button></li>
   </ul>
 </li>
-<li class="nav-item"><a class="external-link nav-link" href="https://github.com/moderndive/exoplanets/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/moderndive/exoplanetdata/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
 
@@ -75,23 +75,32 @@
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header">
-<img src="logo.png" class="logo" alt=""><h1 id="exoplanets-">exoplanets <a class="anchor" aria-label="anchor" href="#exoplanets-"></a>
+<img src="logo.png" class="logo" alt=""><h1 id="exoplanetdata-">exoplanetdata <a class="anchor" aria-label="anchor" href="#exoplanetdata-"></a>
 </h1>
 </div>
-<p>Tidied datasets of confirmed exoplanets and their host stars, retrieved from NASA’s Exoplanet Archive via the <a href="https://github.com/JKolomanski/REXoplanets" class="external-link"><code>REXoplanets</code></a> package. Column names have been simplified for classroom use, with units baked into names where ambiguous. Intended as a companion dataset of the <a href="https://moderndive.com/v2/" class="external-link"><code>moderndive</code></a> textbook.</p>
+<p>Tidied datasets of confirmed exoplanets and their host stars, retrieved from NASA’s Exoplanet Archive via the <a href="https://github.com/JKolomanski/REXoplanets" class="external-link"><code>REXoplanets</code></a> package. Column names have been simplified for classroom use, with units baked into names where ambiguous. Intended as a companion dataset for introductory statistics teaching in the spirit of the <a href="https://moderndive.com" class="external-link"><code>moderndive</code></a> textbook.</p>
+<div class="section level3">
+<h3 id="how-this-differs-from-the-exoplanets-package">How this differs from the <code>exoplanets</code> package<a class="anchor" aria-label="anchor" href="#how-this-differs-from-the-exoplanets-package"></a>
+</h3>
+<p><code>exoplanetdata</code> ships <strong>ready-to-use, pre-tidied data frames</strong> (<code>planets</code> and <code>stars</code>) that load instantly with <code><a href="https://rdrr.io/r/utils/data.html" class="external-link">data()</a></code> and need no network access — the column names, units, and types have been curated for classroom use. It is <em>not</em> a client for the NASA archive.</p>
+<p>If instead you want to <strong>query NASA’s Exoplanet Archive live</strong> and pull down arbitrary tables and columns yourself, use the rOpenSci <a href="https://docs.ropensci.org/exoplanets/" class="external-link"><code>exoplanets</code></a> package (a programmatic API client), or <a href="https://github.com/JKolomanski/REXoplanets" class="external-link"><code>REXoplanets</code></a>, which <code>exoplanetdata</code> itself uses to build its snapshots.</p>
+</div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install the development version from GitHub with:</p>
+<p>Once the package is on CRAN, install the released version with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"exoplanetdata"</span><span class="op">)</span></span></code></pre></div>
+<p>You can install the development version from GitHub with:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"moderndive/exoplanets"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"moderndive/exoplanetdata"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="datasets">Datasets<a class="anchor" aria-label="anchor" href="#datasets"></a>
 </h2>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/moderndive/exoplanets" class="external-link">exoplanets</a></span><span class="op">)</span></span>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/moderndive/exoplanetdata" class="external-link">exoplanetdata</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># One row per confirmed exoplanet (host-star parameters merged in)</span></span>
 <span><span class="va">planets</span></span>
@@ -104,9 +113,8 @@
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li><a href="https://cloud.r-project.org/package=exoplanets" class="external-link">View on CRAN</a></li>
-<li><a href="https://github.com/moderndive/exoplanets/" class="external-link">Browse source code</a></li>
-<li><a href="https://github.com/moderndive/exoplanets/issues" class="external-link">Report a bug</a></li>
+<li><a href="https://github.com/moderndive/exoplanetdata/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/moderndive/exoplanetdata/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
@@ -123,7 +131,7 @@
 <div class="citation">
 <h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li><a href="authors.html#citation">Citing exoplanets</a></li>
+<li><a href="authors.html#citation">Citing exoplanetdata</a></li>
 </ul>
 </div>
 

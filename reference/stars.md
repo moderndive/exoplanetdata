@@ -2,7 +2,7 @@
 
 Reference-level stellar parameter data from NASA's Exoplanet Archive
 `stellarhosts` table. Unlike
-[`planets`](https://moderndive.github.io/exoplanets/reference/planets.md),
+[`planets`](https://moderndive.github.io/exoplanetdata/reference/planets.md),
 this table contains MANY rows per host star (one per published parameter
 solution), so it is the right table for studying the spread of published
 values for a single star but NOT for one-row-per-star analyses. For most

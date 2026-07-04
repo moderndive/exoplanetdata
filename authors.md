@@ -7,16 +7,16 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/moderndive/exoplanets/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/moderndive/exoplanetdata/blob/main/DESCRIPTION)
 
-Ismay C (2026). *exoplanets: Exoplanet Datasets for Teaching
+Ismay C (2026). *exoplanetdata: Exoplanet Datasets for Teaching
 Introductory Statistics*. R package version 0.1.0,
-<https://github.com/moderndive/exoplanets>.
+<https://github.com/moderndive/exoplanetdata>.
 
     @Manual{,
-      title = {exoplanets: Exoplanet Datasets for Teaching Introductory Statistics},
+      title = {exoplanetdata: Exoplanet Datasets for Teaching Introductory Statistics},
       author = {Chester Ismay},
       year = {2026},
       note = {R package version 0.1.0},
-      url = {https://github.com/moderndive/exoplanets},
+      url = {https://github.com/moderndive/exoplanetdata},
     }

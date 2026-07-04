@@ -6,7 +6,7 @@ archive's best composite parameter values, with the planet's host star
 properties already merged in. Column names have been simplified for
 classroom use; the original NASA short name for each column is listed in
 the `archive_name` field of the data dictionary
-(`system.file("extdata", "data_dictionary_planets.csv", package = "exoplanets")`).
+(`system.file("extdata", "data_dictionary_planets.csv", package = "exoplanetdata")`).
 
 ## Usage
 

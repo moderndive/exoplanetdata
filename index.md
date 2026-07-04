@@ -1,27 +1,50 @@
-# exoplanets
+# exoplanetdata
 
 Tidied datasets of confirmed exoplanets and their host stars, retrieved
 from NASA’s Exoplanet Archive via the
 [`REXoplanets`](https://github.com/JKolomanski/REXoplanets) package.
 Column names have been simplified for classroom use, with units baked
-into names where ambiguous. Intended as a companion dataset of the
-[`moderndive`](https://moderndive.com/v2/) textbook.
+into names where ambiguous. Intended as a companion dataset for
+introductory statistics teaching in the spirit of the
+[`moderndive`](https://moderndive.com) textbook.
+
+### How this differs from the `exoplanets` package
+
+`exoplanetdata` ships **ready-to-use, pre-tidied data frames**
+(`planets` and `stars`) that load instantly with
+[`data()`](https://rdrr.io/r/utils/data.html) and need no network access
+— the column names, units, and types have been curated for classroom
+use. It is *not* a client for the NASA archive.
+
+If instead you want to **query NASA’s Exoplanet Archive live** and pull
+down arbitrary tables and columns yourself, use the rOpenSci
+[`exoplanets`](https://docs.ropensci.org/exoplanets/) package (a
+programmatic API client), or
+[`REXoplanets`](https://github.com/JKolomanski/REXoplanets), which
+`exoplanetdata` itself uses to build its snapshots.
 
 ## Installation
+
+Once the package is on CRAN, install the released version with:
+
+``` r
+
+install.packages("exoplanetdata")
+```
 
 You can install the development version from GitHub with:
 
 ``` r
 
 # install.packages("pak")
-pak::pak("moderndive/exoplanets")
+pak::pak("moderndive/exoplanetdata")
 ```
 
 ## Datasets
 
 ``` r
 
-library(exoplanets)
+library(exoplanetdata)
 
 # One row per confirmed exoplanet (host-star parameters merged in)
 planets
@@ -31,7 +54,7 @@ stars
 ```
 
 See
-[`?planets`](https://moderndive.github.io/exoplanets/reference/planets.md)
+[`?planets`](https://moderndive.github.io/exoplanetdata/reference/planets.md)
 and
-[`?stars`](https://moderndive.github.io/exoplanets/reference/stars.md)
+[`?stars`](https://moderndive.github.io/exoplanetdata/reference/stars.md)
 for full data dictionaries.
