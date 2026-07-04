@@ -15,6 +15,7 @@ data-raw/cache/
 
 # leftover hex source (final logo lives at man/figures/logo.png)
 hex.jpg
+data-raw/logo-source.jpeg
 
 # macOS
 .DS_Store
