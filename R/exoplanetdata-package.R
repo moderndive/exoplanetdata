@@ -1,4 +1,4 @@
-#' exoplanets: Exoplanet Datasets for Teaching Introductory Statistics
+#' exoplanetdata: Exoplanet Datasets for Teaching Introductory Statistics
 #'
 #' Tidied datasets of confirmed exoplanets and their host stars, retrieved
 #' from NASA's Exoplanet Archive via the \pkg{REXoplanets} package.
@@ -14,9 +14,9 @@
 #' @section Data dictionary:
 #' Machine-readable column dictionaries are shipped in \code{inst/extdata}:
 #' \preformatted{
-#' system.file("extdata", "data_dictionary_planets.csv", package = "exoplanets")
-#' system.file("extdata", "data_dictionary_stars.csv",   package = "exoplanets")
-#' system.file("extdata", "data_dictionary.md",          package = "exoplanets")
+#' system.file("extdata", "data_dictionary_planets.csv", package = "exoplanetdata")
+#' system.file("extdata", "data_dictionary_stars.csv",   package = "exoplanetdata")
+#' system.file("extdata", "data_dictionary.md",          package = "exoplanetdata")
 #' }
 #'
 #' @keywords internal

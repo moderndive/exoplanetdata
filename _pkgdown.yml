@@ -1,7 +1,7 @@
-url: https://moderndive.github.io/exoplanets/
+url: https://moderndive.github.io/exoplanetdata/
 
 home:
-  title: exoplanets
+  title: exoplanetdata
   description: >
     Tidied datasets of confirmed exoplanets and their host stars, sourced
     from NASA's Exoplanet Archive — designed for teaching introductory
@@ -34,7 +34,7 @@ reference:
 
   - title: Package
     contents:
-      - exoplanets-package
+      - exoplanetdata-package
 
 news:
   releases:

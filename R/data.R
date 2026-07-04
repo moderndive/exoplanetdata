@@ -8,7 +8,7 @@
 #' star properties already merged in. Column names have been simplified for
 #' classroom use; the original NASA short name for each column is listed in
 #' the \code{archive_name} field of the data dictionary
-#' (\code{system.file("extdata", "data_dictionary_planets.csv", package = "exoplanets")}).
+#' (\code{system.file("extdata", "data_dictionary_planets.csv", package = "exoplanetdata")}).
 #'
 #' @format A data frame with 6278 rows and 28 variables:
 #' \describe{

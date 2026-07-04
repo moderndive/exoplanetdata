@@ -1,4 +1,4 @@
-## End-to-end build script for the exoplanets data package.
+## End-to-end build script for the exoplanetdata data package.
 ##
 ## Run from the package root (working directory = package root):
 ##   Rscript data-raw/build_package.R
@@ -322,7 +322,7 @@ planet_doc <- sprintf(
 #\' star properties already merged in. Column names have been simplified for
 #\' classroom use; the original NASA short name for each column is listed in
 #\' the \\code{archive_name} field of the data dictionary
-#\' (\\code{system.file("extdata", "data_dictionary_planets.csv", package = "exoplanets")}).
+#\' (\\code{system.file("extdata", "data_dictionary_planets.csv", package = "exoplanetdata")}).
 #\'
 #\' @format A data frame with %d rows and %d variables:
 #\' \\describe{

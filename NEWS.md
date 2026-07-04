@@ -1,4 +1,4 @@
-# exoplanets 0.1.0
+# exoplanetdata 0.1.0
 
 * Initial release.
 * Adds two datasets sourced from NASA's Exoplanet Archive (retrieved via the
