@@ -2,6 +2,8 @@
 
 ## exoplanetdata 0.1.0
 
+CRAN release: 2026-07-11
+
 - Initial release.
 - Adds two datasets sourced from NASA’s Exoplanet Archive (retrieved via
   the [`REXoplanets`](https://github.com/JKolomanski/REXoplanets)
