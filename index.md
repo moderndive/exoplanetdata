@@ -25,7 +25,7 @@ programmatic API client), or
 
 ## Installation
 
-Once the package is on CRAN, install the released version with:
+Install the released version from CRAN:
 
 ``` r
 
