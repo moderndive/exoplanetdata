@@ -1,6 +1,15 @@
 
 # exoplanetdata <img src="man/figures/logo.png" align="right" height="139" alt="exoplanetdata hex sticker" />
 
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/moderndive/exoplanetdata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/moderndive/exoplanetdata/actions/workflows/R-CMD-check.yaml)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/exoplanetdata)](https://CRAN.R-project.org/package=exoplanetdata)
+[![CRAN
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/exoplanetdata)](https://CRAN.R-project.org/package=exoplanetdata)
+<!-- badges: end -->
+
 Tidied datasets of confirmed exoplanets and their host stars, retrieved
 from NASA’s Exoplanet Archive via the
 [`REXoplanets`](https://github.com/JKolomanski/REXoplanets) package.
@@ -25,7 +34,7 @@ programmatic API client), or
 
 ## Installation
 
-Once the package is on CRAN, install the released version with:
+Install the released version from CRAN:
 
 ``` r
 install.packages("exoplanetdata")
